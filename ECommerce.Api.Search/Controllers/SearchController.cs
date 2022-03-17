@@ -15,7 +15,7 @@ namespace ECommerce.Api.Search.Controllers
             this.searchService = searchService;
         }
 
-        [HttpPost]
+        [HttpPost] 
         public async Task<IActionResult> SearchAsync(SearchTerm term)
         {
             var result = await searchService.SearchAsync(term.CustomerId);
